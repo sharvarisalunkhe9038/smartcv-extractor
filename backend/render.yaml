@@ -1,0 +1,13 @@
+# render.yaml — Deploy backend on Render.com for free 24/7
+
+services:
+  - type: web
+    name: smartcv-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false        # You will enter this manually in Render dashboard
+      - key: MONGODB_URI
+        sync: false        # You will enter this manually in Render dashboard

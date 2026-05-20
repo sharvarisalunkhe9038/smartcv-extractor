@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+pdfplumber
+python-docx
+groq
+pymongo
+python-dotenv
+motor
+pytesseract
+pdf2image
+pillow
